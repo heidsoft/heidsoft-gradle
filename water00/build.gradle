@@ -1,0 +1,9 @@
+allprojects {
+   println "test all projects"
+    
+   task hello {
+        doLast { task ->
+            println "I'm $task.project.name"
+        }
+    }
+}
